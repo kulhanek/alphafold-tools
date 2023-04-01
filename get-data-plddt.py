@@ -20,7 +20,7 @@ parser.add_argument(
     "-o",
     "--output",
     type=Path,
-    default="plddt.txt",
+    default="plddt.dat",
     help="path to text file pLDDT (predicted Local Distance Difference Test) values",    
 )
 args = parser.parse_args()

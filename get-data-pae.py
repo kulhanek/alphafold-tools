@@ -19,7 +19,7 @@ parser.add_argument(
     "-o",
     "--output",
     type=Path,
-    default="pae.log",
+    default="pae.dat",
     help="path to text file with PAE (predicted aligned error) values",    
 )
 parser.add_argument(
