@@ -71,7 +71,7 @@ parser.add_argument(
     "--pattern",
     type=str,
     default="*model*.pkl",
-    help="path to directory with models",    
+    help="search pattern,    
 )
 parser.add_argument(
     "-o",
