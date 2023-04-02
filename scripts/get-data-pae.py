@@ -38,7 +38,9 @@ if not args.input.exists():
 
 print("\nInput model: {0}".format(args.input))
 model_dict = pickle.load(open(args.input,'rb'))
-print("Model keys:  " + str(model_dict.keys()))
+print("Model keys:")
+for key in model_dict.keys():
+    print("  * %s" % key)
 
 if not ('predicted_aligned_error' in model_dict):
     print('\nNo predicted_aligned_error present in data!\n')

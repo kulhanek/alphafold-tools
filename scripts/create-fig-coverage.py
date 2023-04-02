@@ -80,7 +80,9 @@ if not args.input.exists():
 
 print("\nInput features: {0}".format(args.input))
 feature_dict = pickle.load(open(args.input,'rb'))
-print("Features keys:  " + str(feature_dict.keys()))
+print("Features keys:")
+for key in feature_dict.keys():
+    print("  * %s" % key)
 
 print("\nCreating output file: {0}".format(args.output))
 generate_output_images(feature_dict,args)

@@ -32,7 +32,9 @@ if not args.input.exists():
 
 print("\nInput model: {0}".format(args.input))
 model_dict = pickle.load(open(args.input,'rb'))
-print("Model keys:  " + str(model_dict.keys()))
+print("Model keys:")
+for key in model_dict.keys():
+    print("  * %s" % key)
 
 if not ('plddt' in model_dict):
     print('\nNo plddt present in data!\n')
