@@ -1,0 +1,5 @@
+#!/bin/bash
+
+module add alphafold-conda
+
+python $AF_TOOLS/scripts/get-data-plddt.py "$@"
