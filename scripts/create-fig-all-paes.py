@@ -192,8 +192,8 @@ if len(model_dicts) == 0:
 if not ('predicted_aligned_error' in model_dicts[0]['model']):
     print('')
     print("Available model keys:")
-        for key in model_dicts[0]['model'].keys():
-            print("  * %s" % key)
+    for key in model_dicts[0]['model'].keys():
+        print("  * %s" % key)
     print('\nNo predicted_aligned_error present in data!\n')
     quit()    
 

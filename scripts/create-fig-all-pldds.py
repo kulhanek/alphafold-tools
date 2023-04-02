@@ -153,8 +153,8 @@ if len(model_dicts) == 0:
 if not ('plddt' in model_dicts[0]['model']):
     print('')
     print("Available model keys:")
-        for key in model_dicts[0]['model'].keys():
-            print("  * %s" % key)
+    for key in model_dicts[0]['model'].keys():
+        print("  * %s" % key)
     print('\nNo plddt present in data!\n')
     quit()
     
