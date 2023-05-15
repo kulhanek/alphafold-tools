@@ -66,6 +66,8 @@ if not args.input.exists():
 
 # ==============================================================================
 
+print("BLA\n")
+
 print("\nInput model: {0}".format(args.input))
 model_dict = pickle.load(open(args.input,'rb'))
 print("Model keys:")
